@@ -48,6 +48,11 @@ public class AboutMe {
 		System.out.format("%21s English %-7s", "Period #4:", "| Time: 1:55 - 3:15 \n");
 		
 		
+		System.out.println("");
+		System.out.format("Friday: %13s Tech %10s", "Period #1:", "| Time: 9:00 - 10:15 \n");
+		System.out.format("%21s Math %-7s", "Period #2:", "| Time: 10:15 - 11:40 \n");
+		System.out.format("%21s English %-7s", "Period #3:", "| Time: 12:40 - 1:55 \n");
+		System.out.format("%21s Biology %-7s", "Period #4:", "| Time: 1:55 - 3:15 \n");
 		
 		
 		
