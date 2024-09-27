@@ -13,7 +13,7 @@ public class AboutMe {
 		System.out.println("Name: Ethan Henderson"); 
 		System.out.println("Grade: 11");
 		System.out.println("Teacher: Ms. Kemp");
-		System.out.println("School: LPCI in Toronto");
+		System.out.println("School: LPCI - Toronto");
 		System.out.println("!GO LPCI PANTHERS!");
 		System.out.println("____________________________\n ");
 		;

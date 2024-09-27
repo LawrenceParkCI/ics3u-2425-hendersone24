@@ -1,4 +1,9 @@
 package unit1;
+/**
+ * Description: This program prints my first and last name and an image <br>
+ * Date: Sept 27, 2024 <br>
+ * @author Ethan Henderson
+ */
 
 public class ASCIIassignment {
 
@@ -6,7 +11,7 @@ public class ASCIIassignment {
 		// TODO Auto-generated method stub
 		
 		
-		System.out.println("My Name:");
+		System.out.println("My Name, Ethan:");
 		System.out.println("__________ __  .__ ");
 		System.out.println("\\_   _____//  |_|  |__ _____    ____");
 		System.out.println(" |    __)_\\   __\\  |  \\\\__  \\  /    \\");

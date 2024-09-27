@@ -1,5 +1,10 @@
 package unit1;
 
+/**
+ * Description: This program prints a game of Bingo <br>
+ * Date: Sept 27, 2024
+ * @author Ethan Henderson
+ */
 public class BingoAssignment {
 
 	public static void main(String[] args) {
@@ -9,7 +14,7 @@ public class BingoAssignment {
 		System.out.println("BINGO CARD!");
 		System.out.println("");
 		System.out.println("\n1. The caller randomly pulls A numbered bingo ball.");
-		System.out.println("\n2. The Numbver is placed on the bingo board and called.");
+		System.out.println("\n2. The Number is placed on the bingo board and called.");
 		System.out.println("\n3. Players look for the called number on their bingo board.");
 		System.out.println("\n4. If the number is located it is marked off.");
 		System.out.println("\n5. Steps 1 through 4 are repeated until player matches the bingo pattern.");
