@@ -1,9 +1,9 @@
 package unit1;
 
 /**
- *Description:
- *Date:
- *@author 
+ *Description: Creating Variables 
+ *Date: Sept 30, 2024
+ *@author Ethan Henderson
  */
 public class Variables {
 	/**
