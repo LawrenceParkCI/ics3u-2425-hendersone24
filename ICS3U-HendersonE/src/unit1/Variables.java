@@ -13,11 +13,12 @@ public class Variables {
 	public static void main(String[] args) {
 		System.out.println("Warm-up");
 		//Warmup: print your name
-
+        System.out.println("Ethan Henderson");
 		//Warmup: print the calculation for the area of a square with side length 25
-
-
+        System.out.println("5x5");
 		//Key Question: what if the value I want to use needs to change?
+        // x = x(5)
+    
 
 		/*
 Variables
@@ -31,16 +32,18 @@ Variables
 
 		System.out.println("Part 1");
 		//what do you notice is being printed out?
-
+        //myNum = 10 and then it changes to 20
 		int myNum;
 		myNum = 10;
 		System.out.print("myNum = ");
 		System.out.println(myNum);
 
+	
+
 		myNum = 20;
 		System.out.println("myNum is now " + myNum);
 		//Why do the two codes print out different things?
-
+		//Because myNum gets changed to 20
 
 		System.out.println("Part 2 - Creating a Variable");
 
@@ -64,7 +67,11 @@ Once your variable has been given a value, it can then be *referenced* - that is
 
 		//Declare and initialize an int variable called myAge that stores your age.
 
-
+        int myAge = 16; 
+        System.out.println("My age is " + myAge);
+        myAge = myAge + 10;
+        System.out.println("My age now " + myAge);
+        
 		//Print it out in a sentence (Hint: remember how we combined text and numbers in a print statement)
 
 		//Assign it a new value, that is 10 more than the original value
