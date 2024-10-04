@@ -27,7 +27,7 @@ public class RectangleArea {
 		int volume = length * width * depth; 
 		
 		//print the output
-		System.out.println("The area of your rectangle is" + volume);
+		System.out.println("The volume of your rectangle is " + volume);
 		sc.close();
 
 	}
