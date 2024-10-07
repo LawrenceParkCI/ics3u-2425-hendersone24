@@ -1,6 +1,6 @@
 package unit1;
 /**
- * Date: Oct 4, 2024
+ * Oct 7, 2024
  * Description: InputChars
  * @author Ethan Henderson
  */

@@ -1,5 +1,9 @@
 package unit1;
-
+/**
+ * Date: Oct 7, 2024
+ * Description: A rectangles area and volume.
+ * @author Ethan Henderson
+ */
 import java.util.Scanner;
 
 public class RectangleArea {
