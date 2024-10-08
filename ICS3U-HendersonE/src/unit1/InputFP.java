@@ -26,7 +26,7 @@ public class InputFP {
 				
 		//print the output
 		System.out.println();
-		System.out.println("The first numbe entered was " + num1);
+		System.out.println("The first number entered was " + num1);
 		System.out.println("The second number entered was " + num2);
 	}
 
