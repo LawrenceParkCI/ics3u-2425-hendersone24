@@ -61,6 +61,8 @@ public class Alive {
         System.out.println("You've slep for " + hourssSlept + "in total");
         
         System.out.println();
+        
+        
 	}
 
 }

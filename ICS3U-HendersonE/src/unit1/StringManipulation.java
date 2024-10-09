@@ -23,9 +23,7 @@ public class StringManipulation {
 		 System.out.println(myString.length()); 
 		 System.out.println(myString.charAt(5)); 
 		 
-		 //Bonus
-		 System.out.println(myString.charAt(0)); 
-		 System.out.println(myString.substring())
+		
 	}
 
 }
