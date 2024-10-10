@@ -15,6 +15,7 @@ public class StringManipulation {
 		Scanner sc = new Scanner(System.in);
 		
 		
+		//Manipulate String
 		 System.out.println("Input String");
 		 String myString = sc.next();
 		 System.out.println(myString);
