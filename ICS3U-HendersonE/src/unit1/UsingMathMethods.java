@@ -61,6 +61,7 @@ public class UsingMathMethods {
 		  //The methods round, sqrt and abs only have one parameter (which is in the brackets).
 		  //Why does the pow method have 2 parameters? Explain the purpose of these 2 parameters.
 		  
+		   //It takes the first number, and multiplies it by the exponent in the second position
 		  
 		  System.out.println("Part B");
 		  //Ask the user for any real number and an integer to be input. Display the real number,
@@ -84,7 +85,7 @@ public class UsingMathMethods {
 		  //Write down the results produced by your program when the real number 7.8985 and
 		  //the integer 3 are input.
 		  
-		 
+		 //All the steps from the previous code above are printed, eg: the square root 
 		  
 		  
 		  //Change your program so that instead of inputting an integer power, a real number
@@ -93,11 +94,15 @@ public class UsingMathMethods {
 		  //a) the number 16 and the real number power 0.5
 		  //b) the number 8 and the real number power 0.33
 		  
+		  //a) Real number = 16.0 | Squareroot number = 4.0 | Squareroot to the power of 2 = 2.0
+		  
+		  //b) Real number = 8.0  | Squareroot number = 2.8284 | Squareroot to the power of 2 = 1.6817
+		  
 		  
 		  //Does your program give a different answer if 0.3333333 is input instead of 0.33 for the power?
 		  
 		  
-		  
+		  //Yes, it changes the further decimal places slightly, but keep the first decimal place the same
 		  
 		 }
 
