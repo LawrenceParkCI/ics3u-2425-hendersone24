@@ -33,7 +33,7 @@ public class Casting2 {
     //answer 
     //Once the character is transformed to an ASCII, the number 1 is added on using the + sign with no brackets in between. 
     
-    //Investigate what is ASCII. What is it?
+    //Investigate what is ASCII. What is it
     
     //answer
     //ASCII is a character encoding format, where it can assign a num in a char's place.

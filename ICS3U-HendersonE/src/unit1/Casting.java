@@ -56,7 +56,7 @@ public class Casting {
       int to long
       long to int
 
-    Why do you think these are implicit/explicit? (Hint: Think about the size of each data and the type of data)
+    Why do you think these are implicit/explicit? (Hint: Think about the size of each data & the type of data)
     */
     
     
