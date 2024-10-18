@@ -13,7 +13,7 @@ public class DFOutput {
 		
 		//The value displayed is $11.3
 		
-		final double TAX_RATE = 1.13;
+		final double TAX_RATE = 0.13;
 		DecimalFormat money = new DecimalFormat("$#,###,##0.00");
 		DecimalFormat percent = new DecimalFormat("#.#%");
 
@@ -24,7 +24,7 @@ public class DFOutput {
 		
 		System.out.println("The cost of your item with tax is " + money.format(total));
 		
-
+		
 		//Change the above print statement on line 19 to:
 		//System.out.println("The cost of your item with tax is " + money.format(total));
 		//Run the program again, how is the output different? Why?
@@ -56,17 +56,21 @@ public class DFOutput {
 		//Modify the parameter for the DecimalFormat on line 15 to be "$#,###,##0.00"
 		//Run the program again with the cost of 123456, how is the output different? Explain what is happening.
 		
-		//
+		//Output is: $139,505,28 - Seperates the number groups (ex. the hundreds) and multiplies by 0.13 
 		
 		
 		//Uncomment the following print line, and run the program with any value for the cost.
 		//What value is printed for the TAX_RATE?
-		//System.out.println("The tax rate is " + TAX_RATE);
+		System.out.println("The tax rate is " + TAX_RATE);
+		
+		//Tax rate value is printed as 0.13
 		
 		//Change the above print statement to format the TAX_RATE using the percent DecimalFormat instance.
 		//Run the program again with any cost, how is the TAX_RATE displayed differently?
-
-
+		System.out.println("The tax rate is " + percent.format(TAX_RATE));
+		
+		//It prints the 0.13 as the number 13 with a percent sign - 13%
+		
 		sc.close();
 	}
 
