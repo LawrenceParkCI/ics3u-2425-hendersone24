@@ -1,5 +1,11 @@
 package unit1;
+/**
+ * Description: Grocery Shopping List & Receipt
+ * Date: October 23, 2024
+ * @author Ethan Henderson 
+ */
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
@@ -16,8 +22,10 @@ public class GroceryShopping {
 		
 		final double tax = 0.13; 
 		
-		//First Item 
-	
+		//Final Total Format
+		DecimalFormat money = new DecimalFormat("$#,###,##0.00");
+		
+		//First Item Purchase
 		System.out.println("|| $$$ \\\\\\ ========== \"Mr. Henderson's Groceries\" ========== /// $$$ ||"); 
 		System.out.println(); 
 		
@@ -32,16 +40,15 @@ public class GroceryShopping {
 	    int quantity = sc.nextInt(); 
 	    
 	    var totalAmount = (price * quantity); 
-	    System.out.print("Your Total Amount Due:" + totalAmount + (totalAmount * tax));
+	    System.out.print("Your Total Amount Due: "+ totalAmount + (totalAmount * tax));
 	    
-	    //Second Item
+	    //Second Item Purchase
+	    System.out.println("\n"); 
 	    
+	    System.out.println("Second Item: "); 
 	    System.out.println(); 
 	    
-	    System.out.println("Item 2: \n"); 
-	    System.out.println(); 
-	    
-	    System.out.println("What would you like to buy?"); 
+	    System.out.print("What would you like to buy?"); 
 	    String product2 = sc.next();
 	    
 	    System.out.print("How much does it cost?");
@@ -51,16 +58,25 @@ public class GroceryShopping {
 	    int quantity2 = sc.nextInt(); 
 	    
 	    var totalAmount2 = (price2 * quantity2); 
-	    System.out.print("Your Total Amount Due:" + totalAmount2 + (totalAmount2 * tax));
+	    System.out.print("Your Total Amount Due:  " + totalAmount2 + (totalAmount2 * tax));
+	    System.out.println("\n");
 	    
-	    //Receipt 
-	    
-	   System.out.printf("$65s", "This is your recipt /n"); 
-	   System.out.printf("$75s", "Item      |  Price  | Quant. | Total Price "); 
-	   System.out.printf("$63s", "------------------------------------------");
-	   System.out.printf("%32s %11s %10s %14s ");
-
-	
+	    //System Results
+	    var subtotal = (totalAmount + totalAmount2); 
+	    var finaltax = (tax * (totalAmount + totalAmount2)); 
+	    var total = (finaltax + subtotal); 
+	 
+	   //The Receipt 
+	   System.out.printf("\n", "\n");
+	   System.out.printf("%20s", "This is your recipt: \n"); 
+	   System.out.printf("%70s", "Item  |  Price   | Quant   | Total Price \n"); 
+	   System.out.printf("%70s", "--------------------------------------------- \n");
+	   System.out.printf("%32s  | %7s  | %6s  | %7s \n", product, price, quantity, totalAmount);
+	   System.out.printf("%32s  | %7s  | %6s  | %7s \n", product2, price2, quantity2, totalAmount2);
+	   System.out.printf("%70s", "--------------------------------------------- \n");
+	   System.out.printf("%58s %9s \n", "Subtotal: ", money.format(subtotal)); 
+	   System.out.printf("%58s %9s \n", "Tax Due: ", money.format(finaltax));
+	   System.out.printf("%58s %9s \n", "Total: ", money.format(total));
 	}
 
 }
