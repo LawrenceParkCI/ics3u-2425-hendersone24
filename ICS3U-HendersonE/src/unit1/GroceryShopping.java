@@ -1,12 +1,10 @@
 package unit1;
-/**
- * Description: Grocery Shopping List & Receipt
- * Date: October 23, 2024
- * @author Ethan Henderson 
- */
+
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 /**
  * Description: Grocery Store System
@@ -24,7 +22,7 @@ public class GroceryShopping {
 		
 		//Final Total Format
 		DecimalFormat money = new DecimalFormat("$#,###,##0.00");
-		
+		DateTimeFormatter dateTimeFormat = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 		//First Item Purchase
 		System.out.println("|| $$$ \\\\\\ ========== \"Mr. Henderson's Groceries\" ========== /// $$$ ||"); 
 		System.out.println(); 
@@ -68,7 +66,9 @@ public class GroceryShopping {
 	 
 	   //The Receipt 
 	   System.out.printf("\n", "\n");
-	   System.out.printf("%20s", "This is your recipt: \n"); 
+	   System.out.printf("%20s", "This is your recipt: \n");
+	   
+	  System.out.printf("%25s \n", dateTimeFormat.format(LocalDateTime.now()));
 	   System.out.printf("%70s", "Item  |  Price   | Quant   | Total Price \n"); 
 	   System.out.printf("%70s", "--------------------------------------------- \n");
 	   System.out.printf("%32s  | %7s  | %6s  | %7s \n", product, price, quantity, totalAmount);
@@ -77,6 +77,15 @@ public class GroceryShopping {
 	   System.out.printf("%58s %9s \n", "Subtotal: ", money.format(subtotal)); 
 	   System.out.printf("%58s %9s \n", "Tax Due: ", money.format(finaltax));
 	   System.out.printf("%58s %9s \n", "Total: ", money.format(total));
+	   
+	   long totalRounded = Math.round(total); 
+	   System.out.println("This is approximatley: $" + totalRounded);
+	   
+	   System.out.println("\n");
+	   System.out.println("Have a good day! \n");
+	   System.out.println("Thanks for shopping at Mr. Henderson's Groceries!");
+	   
+	   
 	}
 
 }
