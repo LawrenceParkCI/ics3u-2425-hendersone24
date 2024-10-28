@@ -14,6 +14,10 @@ import java.time.format.DateTimeFormatter;
 
 public class GroceryShopping {
 
+/**
+ * Grocery Shoppping and Receipt
+ * @param below
+ */
 	public static void main(String[] args) {
 		 Scanner sc = new Scanner(System.in);
 		// TODO Auto-generated method stub
